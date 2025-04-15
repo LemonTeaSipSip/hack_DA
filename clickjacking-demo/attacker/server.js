@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'sql212002', 
+  password: 'NewSecurePassword123!', 
   database: 'clickjacking_demo'
 });
 
