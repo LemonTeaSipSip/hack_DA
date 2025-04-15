@@ -19,7 +19,7 @@ if (!fs.existsSync(sessionsDir)) {
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'sql212002',
+  password: 'NewSecurePassword123!',
   database: 'csrf_demo'
 });
 
